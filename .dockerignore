@@ -1,0 +1,6 @@
+.vagrant
+
+ansible.cfg
+requirements.yml
+vagrant.yml
+Vagrantfile

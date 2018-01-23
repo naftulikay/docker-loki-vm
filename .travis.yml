@@ -1,0 +1,17 @@
+---
+dist: trusty
+sudo: required
+
+matrix:
+  fast_finish: true
+
+services:
+  - docker
+
+install: docker build -t naftulikay/loki-vm:latest .
+
+notifications:
+  email:
+    on_success: never
+    on_failure: never
+  webhooks: https://registry.hub.docker.com/u/naftulikay/loki-vm/trigger/${DOCKERHUB_TOKEN}/
