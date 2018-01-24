@@ -10,6 +10,6 @@ Licensed at your discretion under either:
  - Apache License, Version 2.0 (`./LICENSE-APACHE`)
 
  [docker]: https://hub.docker.com/r/naftulikay/loki-vm/
- [docker.svg]: https://img.shields.io/docker/automated/naftulikay/loki-vm.svg?maxAge=2592000
+ [docker.svg]: https://img.shields.io/docker/automated/naftulikay/loki-vm.svg
  [travis]: https://travis-ci.org/naftulikay/docker-loki-vm/
  [travis.svg]: https://travis-ci.org/naftulikay/docker-loki-vm.svg?branch=master

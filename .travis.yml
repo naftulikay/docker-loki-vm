@@ -2,11 +2,17 @@
 dist: trusty
 sudo: required
 
+language: python
+python: "3.5"
+cache: { pip: true }
+
 matrix:
   fast_finish: true
 
 services:
   - docker
+
+before_install: pip install --upgrade -r requirements.txt
 
 install: docker build -t naftulikay/loki-vm:latest .
 
