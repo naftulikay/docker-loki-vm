@@ -9,7 +9,7 @@ COPY files/lsb-release /etc/lsb-release
 
 # install the elementary-desktop metapackage
 RUN apt-get update >/dev/null \
-  && apt-get install -y elementary-desktop >/dev/null \
+  && DEBIAN_FRONTEND=noninteractive apt-get install -y elementary-desktop >/dev/null \
   && rm -rf /var/lib/apt/lists/* \
   && apt-get clean
 
