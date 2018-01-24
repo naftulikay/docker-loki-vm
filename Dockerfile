@@ -1,7 +1,7 @@
 FROM naftulikay/xenial-vm
 
 # install repository and key
-RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 6C8769CEDC20F5E66C3B7D37BF36996C4E1F8A59
+RUN apt-key adv --keyserver pool.sks-keyservers.net --recv-keys 6C8769CEDC20F5E66C3B7D37BF36996C4E1F8A59
 COPY files/elementary.list /etc/apt/sources.list.d/
 
 # reconfigure lsb-release to report accurately
