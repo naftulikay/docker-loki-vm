@@ -13,8 +13,7 @@ services:
   - docker
 
 before_install: pip install --upgrade -r requirements.txt
-
-script: travis-pls docker build -t naftulikay/loki-vm:latest .
+script: travis-pls -i 300 make travis
 
 notifications:
   email:
