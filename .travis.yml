@@ -1,22 +1,14 @@
 ---
 dist: trusty
-sudo: required
+sudo: false
 
 language: python
-python: "3.5"
-cache: { pip: true }
+python: 3.6
 
-matrix:
-  fast_finish: true
-
-services:
-  - docker
-
-before_install: pip install --upgrade -r requirements.txt
-script: travis-pls -i 300 make travis
+script:
+  - make test
 
 notifications:
   email:
     on_success: never
     on_failure: never
-  webhooks: https://registry.hub.docker.com/u/naftulikay/loki-vm/trigger/${DOCKERHUB_TOKEN}/
