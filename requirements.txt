@@ -1,2 +1,1 @@
-pip>=9
-git+https://github.com/naftulikay/travis-pls
+ansible

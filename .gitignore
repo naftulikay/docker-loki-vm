@@ -1,2 +1,4 @@
-.ansible
-.vagrant
+/.ansible/galaxy-roles
+/.vagrant
+
+/tests/.ansible/galaxy-roles
