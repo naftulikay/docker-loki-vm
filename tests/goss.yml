@@ -1,4 +1,13 @@
 ---
+command:
+  'sudo ls':
+    exit-status: 0
+
+  'id -u -n':
+    exit-status: 0
+    stdout:
+      - container
+
 package:
   elementary-desktop:
     installed: true
